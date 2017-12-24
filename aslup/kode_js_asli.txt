@@ -1,0 +1,725 @@
+<script language="javascript">
+var dolar=8200;
+function validasi()
+{
+ if (document.vocer.operator.value=="")
+ {
+ 	alert("data harus lengkap");
+ 	return false;
+ }
+}
+function cekharga()
+{
+	formobj=document.FORM1;
+	//simpati 
+	if ((formobj.operator.value=="simpati")&&(formobj.rego.value=="5000"))
+	{
+		var nilai=5000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="S5";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	} else if	((formobj.operator.value=="simpati")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="S10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="simpati")&&(formobj.rego.value=="20000"))
+	{
+		var nilai=20000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="S20";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="simpati")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="S50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//AS
+	else if ((formobj.operator.value=="AS")&&(formobj.rego.value=="5000"))
+	{
+		var nilai=5000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="AS5";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai/dolar;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	} else if	((formobj.operator.value=="AS")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="AS10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai/dolar;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="AS")&&(formobj.rego.value=="20000"))
+	{
+		var nilai=20000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="AS20";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="AS")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="AS50";
+		document.FORM1.harga.value=nilai;
+	document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//Mentari
+	else if	((formobj.operator.value=="mentari")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="M10";
+		document.FORM1.harga.value=nilai;
+	document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="mentari")&&(formobj.rego.value=="20000"))
+	{
+		var nilai=20000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="M20";
+		document.FORM1.harga.value=nilai;
+	document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="mentari")&&(formobj.rego.value=="25000"))
+	{
+		var nilai=25000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="M25";
+		document.FORM1.harga.value=nilai;
+	document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="mentari")&&(formobj.rego.value=="30000"))
+	{
+		var nilai=30000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="M30";
+		document.FORM1.harga.value=nilai;
+	document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="mentari")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="M50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="mentari")&&(formobj.rego.value=="100000"))
+	{
+		var nilai=100000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="M100";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//IM3
+	else if	((formobj.operator.value=="im")&&(formobj.rego.value=="5000"))
+	{
+		var nilai=5000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="I5";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="im")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="I10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="im")&&(formobj.rego.value=="20000"))
+	{
+		var nilai=20000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="I20";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="im")&&(formobj.rego.value=="25000"))
+	{
+		var nilai=25000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="I25";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="im")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="I50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="im")&&(formobj.rego.value=="100000"))
+	{
+		var nilai=100000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="I100";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//XL
+	else if	((formobj.operator.value=="xl")&&(formobj.rego.value=="5000"))
+	{
+		var nilai=5000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="X5";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="xl")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="X10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="xl")&&(formobj.rego.value=="25000"))
+	{
+		var nilai=25000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="X25";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="xl")&&(formobj.rego.value=="30000"))
+	{
+		var nilai=30000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="X30";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="xl")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="X50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="xl")&&(formobj.rego.value=="100000"))
+	{
+		var nilai=100000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="X100";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//Axis
+	else if	((formobj.operator.value=="axis")&&(formobj.rego.value=="5000"))
+	{
+		var nilai=5000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="AX5";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="axis")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="AX10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="axis")&&(formobj.rego.value=="25000"))
+	{
+		var nilai=25000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="AX25";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="axis")&&(formobj.rego.value=="30000"))
+	{
+		var nilai=30000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="AX30";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="axis")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="AX50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="axis")&&(formobj.rego.value=="100000"))
+	{
+		var nilai=100000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="AX100";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//Three
+	else if	((formobj.operator.value=="three")&&(formobj.rego.value=="4000"))
+	{
+		var nilai=4000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="T4";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="three")&&(formobj.rego.value=="5000"))
+	{
+		var nilai=5000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="T5";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="three")&&(formobj.rego.value=="9000"))
+	{
+		var nilai=9000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="T9";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="three")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="T10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="three")&&(formobj.rego.value=="19000"))
+	{
+		var nilai=19000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="T19";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="three")&&(formobj.rego.value=="20000"))
+	{
+		var nilai=20000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="T20";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="three")&&(formobj.rego.value=="30000"))
+	{
+		var nilai=30000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="T30";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="three")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="T50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="three")&&(formobj.rego.value=="100000"))
+	{
+		var nilai=100000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="T100";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//Esia
+	else if	((formobj.operator.value=="esia")&&(formobj.rego.value=="1000"))
+	{
+		var nilai=1000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="E1";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="esia")&&(formobj.rego.value=="5000"))
+	{
+		var nilai=5000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="E5";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="esia")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="E10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="esia")&&(formobj.rego.value=="17000"))
+	{
+		var nilai=17000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="E17";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="esia")&&(formobj.rego.value=="19000"))
+	{
+		var nilai=19000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="E19";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="esia")&&(formobj.rego.value=="20000"))
+	{
+		var nilai=20000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="E20";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="esia")&&(formobj.rego.value=="25000"))
+	{
+		var nilai=25000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="E25";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="esia")&&(formobj.rego.value=="35000"))
+	{
+		var nilai=35000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="E35";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="esia")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="E50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="esia")&&(formobj.rego.value=="100000"))
+	{
+		var nilai=100000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="E100";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//Flexi
+	else if	((formobj.operator.value=="flexi")&&(formobj.rego.value=="5000"))
+	{
+		var nilai=5000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="F5";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="flexi")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="F10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="flexi")&&(formobj.rego.value=="20000"))
+	{
+		var nilai=20000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="F20";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="flexi")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="F50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="flexi")&&(formobj.rego.value=="100000"))
+	{
+		var nilai=100000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="F100";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="flexi")&&(formobj.rego.value=="150000"))
+	{
+		var nilai=150000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="F150";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//smart
+	else if	((formobj.operator.value=="smart")&&(formobj.rego.value=="5000"))
+	{
+		var nilai=5000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="SM5";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="smart")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="SM10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="smart")&&(formobj.rego.value=="20000"))
+	{
+		var nilai=20000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="SM20";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="smart")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="SM50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="smart")&&(formobj.rego.value=="100000"))
+	{
+		var nilai=100000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="SM100";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//starone
+	else if	((formobj.operator.value=="starone")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="ST10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="starone")&&(formobj.rego.value=="20000"))
+	{
+		var nilai=20000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="ST20";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="starone")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="ST50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="starone")&&(formobj.rego.value=="100000"))
+	{
+		var nilai=100000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="ST100";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//FREN
+	else if	((formobj.operator.value=="fren")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="FR10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="fren")&&(formobj.rego.value=="25000"))
+	{
+		var nilai=25000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="FR25";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="fren")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="FR50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="fren")&&(formobj.rego.value=="100000"))
+	{
+		var nilai=100000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="FR100";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	
+	//hepi
+	else if	((formobj.operator.value=="hepi")&&(formobj.rego.value=="5000"))
+	{
+		var nilai=5000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="H5";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="hepi")&&(formobj.rego.value=="10000"))
+	{
+		var nilai=10000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="H10";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="hepi")&&(formobj.rego.value=="25000"))
+	{
+		var nilai=25000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="H25";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="hepi")&&(formobj.rego.value=="30000"))
+	{
+		var nilai=30000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="H30";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="hepi")&&(formobj.rego.value=="50000"))
+	{
+		var nilai=50000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="H50";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+	else if	((formobj.operator.value=="hepi")&&(formobj.rego.value=="100000"))
+	{
+		var nilai=100000;
+		var nilai_lr=nilai/dolar;
+		document.FORM1.kode.value="H100";
+		document.FORM1.harga.value=nilai;
+		document.FORM1.lr_amnt.value=nilai_lr.toFixed(2);
+		return false;
+	}
+}
+
+</script>

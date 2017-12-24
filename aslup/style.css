@@ -1,0 +1,393 @@
+/* CSS Document */
+
+body {
+margin-top:0px;
+margin-left:0px;
+margin-right:0px;
+background:#D0E6F3;
+}
+
+#wraper {
+width:auto;
+height:auto;
+}
+
+#logo {
+width:313px;
+height:65px; margin-left:250px;
+margin-top:57px;
+}
+
+#atasan {
+width:auto;
+height:111px;
+background-color:#FFFFFF;
+
+}
+
+#atasan-kiri {
+width:40%;
+float:left;
+height:111px;
+}
+
+#atasan-kanan {
+width:40%;
+height:111px;
+float:right;
+}
+
+#navigasi-atas {
+height:25px;
+/*background-color:#70BCEC;*/
+margin-top:10px;
+margin-right:20px;
+text-align:right;
+}
+
+.clear {
+clear:both;
+}
+
+#bg-atas {
+background:url(images/bg-atas.jpg) repeat-x;
+height:90px;
+width:100%;
+}
+
+#bawah-bg {
+height:15px;
+background-color:#C6E3EE;
+width:100%;
+}
+
+#bawah-bg-kiri {
+height:15px;
+float:left;
+width:20%;
+}
+
+#bawah-bg-tengah {
+float:left;
+width:70%;
+height:15px;
+background:url(images/bg-bawah-tengah.jpg) no-repeat;
+}
+
+#bawah-bg-kanan {
+height:15px;
+width:10%;float:left;
+}
+
+#bg-repeat {
+height:388px;
+width:100%;
+background:url(images/bg-repeat.gif) repeat-x;
+}
+
+#kiwo {
+width:20%;
+float:left;
+height:277px;
+background:url(images/kiwo.jpg) no-repeat;
+background-position:right;
+}
+
+#tengah {
+width:757px;
+float:left;
+height:277px; border:0px solid red;
+}
+
+#tengen {
+width:10%;
+float:left;
+height:277px;
+background:url(images/tengen.jpg) no-repeat;
+background-position:left;
+}
+
+@font-face {
+font-family:"Arial Rounded MT Bold";
+src:url(images/ARLRDBD.TTF);
+}
+
+#sub-judul {
+width:450px;
+height:auto;
+margin-left:220px;text-align:right
+}
+
+.font-sub-judul { 
+font-family:"Arial Rounded MT Bold";
+font-size:200%;
+text-align:right;
+color:#1F82C2;
+line-height:35px;
+}
+
+#board-kiri {
+width:10px;
+height:276px;
+background:url(images/board-kiri.jpg) no-repeat;
+float:left;
+}
+
+#board-tengah {
+float:left;
+width:736px;
+height:276px;
+background:url(images/board-tengah.gif) repeat-x;
+}
+
+#board-kanan {
+width:11px;
+height:276px;
+background:url(images/board-kanan.jpg) no-repeat;
+float:left;
+}
+
+
+#kiwo2 {
+width:20%;
+float:left;
+background:url(images/board-kiri2.jpg) no-repeat;
+height:14px;
+background-position:right;
+}
+
+#tengah2 {
+float:left;
+width:758px;
+background:url(images/bg-bawah-tengah2.jpg) no-repeat; 
+height:14px; margin-top:-1px;
+}
+
+#tengen2 {
+float:left;
+width:10%;
+background:url(images/board-kanan2.jpg) no-repeat;
+height:14px; background-position:left;
+}
+
+#bawah-kiri {
+float:left;
+width:20%;
+background:url(images/bawah-kiri.jpg) no-repeat;
+height:15px;
+background-position:right;
+margin-top:-1px;
+}
+
+#bawah-tengah {
+ float:left;
+ width:758px;
+ background:url(images/bawah-tengah.jpg) no-repeat;
+ height:15px;margin-top:-1px; 
+}
+
+#bawah-kanan {
+	float:left;
+	width:133px;
+	background:url(images/bawah-kanan.jpg) no-repeat;
+	height:15px;
+	background-position:left;margin-top:-1px; 
+}
+
+#putih-kiri {
+float:left;
+width:20%;
+height:12px;
+background:url(images/putih-kiwo.jpg) no-repeat;
+background-position:right;
+
+}
+
+#putih-tengah {
+	float:left;
+	width:759px;
+	height:12px;
+}
+
+#putih-kanan {
+	float:left;
+	width:43px;
+	height:12px;
+}
+
+#tengah-putih-kiri {
+	float:left;
+	width:20%;
+	height:46px;
+	background-position:right;
+}
+
+#tengah-putih-tengah {
+	float:left;
+	width:758px;
+	background:#FFFFFF;
+	height:46px;
+}
+	
+#tengah-putih-kanan {
+	float:left;
+	width:43px;
+	background:url(images/tengah-putih-kanan.jpg) no-repeat;
+	height:46px;
+}
+
+#bawah-putih-kiri {
+	float:left;
+	width:20%;
+	height:12px;
+	background:url(images/bawah-putih-kiri.jpg) no-repeat;
+	background-position:right;
+}
+
+#bawah-putih-tengah {
+	float:left;
+	width:758px;
+	height:12px;
+	background:url(images/bawah-putih-tengah.jpg) no-repeat;
+}
+
+#bawah-putih-kanan {
+	float:left;
+	width:43px;
+	height:12px;
+	background:url(images/bawah-putih-kanan.jpg) no-repeat;
+}
+
+#list-kiri {
+float:left;
+width:20%;
+background:url(images/list-kiri.jpg) no-repeat;
+height:12px;
+background-position:right;
+}
+
+#list-tengah {
+	float:left;
+	width:758px;
+	background:url(images/list-tengah.jpg) no-repeat;
+	height:12px;
+}
+
+#list-kanan {
+	float:left;
+	width:43px;
+	background:url(images/list-kanan.jpg) no-repeat;
+	height:12px;
+}
+
+#footer-kiri {
+	float:left;
+	width:20%;
+	height:115px; 
+}
+	
+#footer-tengah {
+	float:left;
+	width:758px;
+	height:115px;
+}
+
+#footer-kanan {
+	float:left;
+	width:43px;
+	height:115px;
+}
+
+#bawah-footer-kiri {
+	float:left;
+	width:184px;
+	height:115px;
+	background:url(images/nggon-ym.jpg) no-repeat;
+	
+}
+
+#bawah-footer-nat {
+	float:left;
+	width:8px;
+	height:115px;
+	background:url(images/nat.jpg) no-repeat;
+}
+
+#bawah-footer-kanan {
+	float:left;
+	width:566px;
+	height:115px;
+	background:url(images/nggon-info.jpg) no-repeat;
+	
+}
+
+
+#prvider-kiri {
+	float:left;
+	width:20%;
+	height:71px;
+	background:url(images/provider-kiri.jpg) no-repeat;
+	background-position:right
+}
+
+#provider-tengah {
+	float:left;
+	width:759px;
+	background:url(images/provider.jpg) no-repeat;
+  height:71px;
+}
+
+#provider-kanan {
+	float:left;
+	width:43px;
+	height:71px;
+	background:url(images/provider-kanan.jpg) no-repeat;
+}
+
+
+td {
+font-family:arial;
+color:#fff;
+font-size:17px;
+font-weight:bold;
+}
+
+input, select {
+border-radius: 6px; 
+padding:4px; 
+border:1px solid #4698CA;
+-moz-border-radius: 0.4em;
+background:#AAD6F1;
+color:#1F82C3;
+font-weight:bold
+}
+
+li {
+margin-left:25px;
+font-family:arial;
+color:#4698CA;
+font-size:14px;
+}
+
+
+a.link-ndukur {
+	color:#4698CA;
+	text-decoration:none;
+	font-family:arial;
+	font-size:14px;
+	
+}
+
+a.hover:link-ndukur {
+		color:#4698CA;
+	text-decoration:none;
+	font-family:arial;
+	font-size:14px;
+}
+
+.pembatas {
+font-size: 13px;
+color:#4698CA;
+font-family:arial;
+}
+
