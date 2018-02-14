@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A function is triggered when the user releases a key in the input field. The function transforms the character to upper case.</p>
+Enter your name: <input type="text" id="fname" onkeyup="myFunction()">
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var x = document.getElementById("fname");
+    if (x.value=="1"){
+          hasil = "satu";
+    }else{
+    	hasil	="Bukan satu";
+    }
+    document.getElementById("demo").innerHTML = hasil;
+
+}
+</script>
+
+</body>
+</html>
