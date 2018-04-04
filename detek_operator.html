@@ -22,6 +22,7 @@ var harga_operator={}
         
 function harga_list() {
 	detek();
+    hapus();
 	var x = document.getElementById("mySelect");
     var option = document.createElement("option");
     var i;
@@ -62,6 +63,13 @@ function detek() {
         break;
    }
 	document.getElementById("operator").value=operator;
+}
+function hapus() {
+    var x = document.getElementById("mySelect");
+    var len=x.length;
+    for (var i = 0; i < len; i++) {
+    	x.options.remove(0);
+    }
 }
 
 </script>
