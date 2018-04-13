@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  <select id="mySelect" size="8">
+    <option>Apple</option>
+    <option>Pear</option>
+    <option>Banana</option>
+    <option>Orange</option>
+  </select>
+</form>
+
+<p>Click the button to add a "Kiwi" option at the index position "1" in the drop-down list.</p>
+
+<input type="text" onkeyup="myFunction()" id="mobil"></input>
+
+<script>
+var carsAndModels = {};
+carsAndModels['VO'] = ['V70', 'XC60', 'XC90'];
+carsAndModels['VW'] = ['Golf', 'Polo', 'Scirocco', 'Touareg'];
+carsAndModels['BMW'] = ['M6', 'X5', 'Z3'];
+
+function myFunction() {
+	var merk=document.getElementById("mobil").value
+    var x = document.getElementById("mySelect");
+    var c = document.createElement("option");
+    while (x.options.length) {
+        x.remove(0);
+    }
+    var libom=carsAndModels[merk];
+    for(i=0;i<libom.length;i++)
+    {
+    	var car = new Option(libom[i]);
+        x.options.add(car);
+    }
+}
+</script>
+
+</body>
+</html>
