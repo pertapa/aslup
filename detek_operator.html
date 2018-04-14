@@ -6,12 +6,13 @@
   
   Enter your phone: <input type="text" id="nomor" onkeyup="detek()">
 	<input type ="text" id="operator" enable="no"  >
+    <select id="mySelect">
+ 	</select>
 	<p id="demo"></p>
 	<p id="potongan"></p>
 	<p id="operator"></p>
-    <select id="mySelect">
-  </select>
-  <button type="button" onclick="harga_list()">Insert option</button>
+   
+  
 </form>
 <br>
 <script>
@@ -21,9 +22,8 @@ var harga_operator={}
     	harga_operator['Telkomsel']=['5000','10000','25000','50000','100000','150000'];
         
 function harga_list() {
-	detek();
-    hapus();
-	var x = document.getElementById("mySelect");
+	
+	var opsi = document.getElementById("mySelect");
     var option = document.createElement("option");
     var i;
     var nama_op=operator;
@@ -31,7 +31,7 @@ function harga_list() {
     for(i=0;i<harga.length;i++)
     {
     	var rego = new Option(harga[i]);
-        x.options.add(rego);
+        opsi.options.add(rego);
     }
     
 }
@@ -63,6 +63,8 @@ function detek() {
         break;
    }
 	document.getElementById("operator").value=operator;
+    hapus();
+    harga_list();
 }
 function hapus() {
     var x = document.getElementById("mySelect");
