@@ -1,80 +1,71 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<form>
-  
-  Enter your phone: <input type="text" id="nomor" onkeyup="detek()">
-	<input type ="text" id="operator" enable="no"  >
-    <select id="mySelect">
- 	</select>
-	<p id="demo"></p>
-	<p id="potongan"></p>
-	<p id="operator"></p>
-   
-  
-</form>
-<br>
-<script>
-var harga_operator={}
-	harga_operator['Indosat']=['5000','10000','25000','50000'];
-    	harga_operator['XL']=['5000','10000','25000','50000','100000'];
-    	harga_operator['Telkomsel']=['5000','10000','25000','50000','100000','150000'];
-        
-function harga_list() {
-	
-	var opsi = document.getElementById("mySelect");
-    var option = document.createElement("option");
-    var i;
-    var nama_op=operator;
-    var harga=harga_operator[nama_op];
-    for(i=0;i<harga.length;i++)
-    {
-    	var rego = new Option(harga[i]);
-        opsi.options.add(rego);
-    }
+	<body>
+		<form>
+    			Enter your phone: <input type="text" id="nomor" onkeyup="detek()">
+			<input type ="text" id="operator" enable="no"  >
+    			<select id="mySelect">
+ 			</select>
+			<p id="demo"></p>
+			<p id="potongan"></p>
+			<p id="operator"></p>
+		</form>
+		<br>
+		<script>
+			var harga_operator={}
+				harga_operator['Indosat']=['5000','10000','25000','50000'];
+    				harga_operator['XL']=['5000','10000','25000','50000','100000'];
+    				harga_operator['Telkomsel']=['5000','10000','25000','50000','100000','150000'];
+			function harga_list() {
+				var opsi = document.getElementById("mySelect");
+    				var option = document.createElement("option");
+    				var i;
+    				var nama_op=operator;
+    				var harga=harga_operator[nama_op];
+    				for(i=0;i<harga.length;i++){
+    					var rego = new Option(harga[i]);
+        				opsi.options.add(rego);
+    				}
     
-}
-function detek() {
-    var x = document.getElementById("nomor").value;
-    var potong=x.substring(0, 4);
-    //document.getElementById("potongan").innerHTML = potong;
-    switch (potong) {
-    case "0815": case "0816": case "0814": case "0855": case "0856": case "0857": case "0857": case "0858":
-        operator = "Indosat";
-        break;
-    case "0811": case "0812": case "0813": case "0821": case "0822": case "0823": case "0851": case "0852": case "0853":
-        operator = "Telkomsel";
-        break;
-    case "0817": case "0818": case "0819": case "0859": case "0877": case "0878":
-        operator = "XL";
-        break;
-    case "0896": case "0897": case "0898": case "0899":
-        operator = "Three";
-        break;
-    case "0881": case "0882": case "0883": case "0884": case "0885": case "0886": case "0887":  case "0888": case "0889": 
-        operator = "Smart";
-        break;
-    case "0828":
-        operator = "Ceria";
-        break;
-    default:
-    	operator = "Operator"
-        break;
-   }
-	document.getElementById("operator").value=operator;
-    hapus();
-    harga_list();
-}
-function hapus() {
-    var x = document.getElementById("mySelect");
-    var len=x.length;
-    for (var i = 0; i < len; i++) {
-    	x.options.remove(0);
-    }
-}
-
-</script>
-
-</body>
+			}
+			function detek() {
+    				var x = document.getElementById("nomor").value;
+    				var potong=x.substring(0, 4);
+    				//document.getElementById("potongan").innerHTML = potong;
+    				switch (potong) {
+    				case "0815": case "0816": case "0814": case "0855": case "0856": case "0857": case "0857": case "0858":
+        				operator = "Indosat";
+        				break;
+    				case "0811": case "0812": case "0813": case "0821": case "0822": case "0823": case "0851": case "0852": case "0853":
+        				operator = "Telkomsel";
+        				break;
+    				case "0817": case "0818": case "0819": case "0859": case "0877": case "0878":
+        				operator = "XL";
+        				break;
+    				case "0896": case "0897": case "0898": case "0899":
+        				operator = "Three";
+        				break;
+    				case "0881": case "0882": case "0883": case "0884": case "0885": case "0886": case "0887":  case "0888": case "0889": 
+        				operator = "Smart";
+        				break;
+    				case "0828":
+        				operator = "Ceria";
+        				break;
+    				default:
+    					operator = "Operator"
+        				break;
+   				}
+				document.getElementById("operator").value=operator;
+    				hapus();
+    				harga_list();
+			}
+			function hapus() {
+    				var x = document.getElementById("mySelect");
+    				var len=x.length;
+    				for (var i = 0; i < len; i++) {
+    					x.options.remove(0);
+    				}
+			}
+		</script>
+	</body>
 </html>
