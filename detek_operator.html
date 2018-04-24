@@ -3,8 +3,9 @@
 	<body>
 		<form>
     			Enter your phone: <input type="text" id="nomor" onkeyup="detek()">
-			<input type ="text" id="operator" enable="no"  >
-    			<select id="mySelect">
+			<input type ="text" id="operator" disabled>
+    		<select id="mySelect" disabled>
+            	 <option value="harga">harga</option>
  			</select>
 			<p id="demo"></p>
 			<p id="potongan"></p>
@@ -35,29 +36,31 @@
     				switch (potong) {
     				case "0815": case "0816": case "0814": case "0855": case "0856": case "0857": case "0857": case "0858":
         				operator = "Indosat";
-        				break;
+                        document.getElementById("mySelect").disabled = false;
+                        break;
     				case "0811": case "0812": case "0813": case "0821": case "0822": case "0823": case "0851": case "0852": case "0853":
         				operator = "Telkomsel";
-        				break;
+                        break;
     				case "0817": case "0818": case "0819": case "0859": case "0877": case "0878":
         				operator = "XL";
-        				break;
+                       	break;
     				case "0896": case "0897": case "0898": case "0899":
         				operator = "Three";
-        				break;
+                       	break;
     				case "0881": case "0882": case "0883": case "0884": case "0885": case "0886": case "0887":  case "0888": case "0889": 
         				operator = "Smart";
-        				break;
+                       	break;
     				case "0828":
         				operator = "Ceria";
+                        document.getElementById("mySelect").disabled = false;
         				break;
     				default:
     					operator = "Operator"
         				break;
    				}
 				document.getElementById("operator").value=operator;
-    				hapus();
-    				harga_list();
+                hapus();
+    			harga_list();
 			}
 			function hapus() {
     				var x = document.getElementById("mySelect");
